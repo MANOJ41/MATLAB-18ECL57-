@@ -1,0 +1,12 @@
+clc;
+clear all;
+close all;
+x=input('enter the first sequence');
+h=input('enter the second sequence in matrix format');
+y=x*h;
+disp('circular convolution');
+disp(y);
+stem(y);
+xlabel('n');
+ylabel('y(n)');
+grid on;

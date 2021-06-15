@@ -1,0 +1,18 @@
+clc;
+clear all;
+XK=input('enter the sequence x(k) = ');
+N=input('enter the number of points of computation = ');
+y=idft(XK,N);
+disp(y);
+amp=abs(y);
+ph=angle(y);
+subplot(2,1,1);
+stem(amp);
+xlabel('MAGNITUDE');
+ylabel('K');
+title('magnitude plot');
+subplot(2,1,2);
+stem(ph*180/pi);
+ylabel('K');
+xlabel('phase');
+title('phase plot');
